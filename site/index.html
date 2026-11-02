@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Stanley Predilla — a passionate developer exploring programming and problem solving." />
+  <title>Stanley Predilla | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ================= NAVIGATION ================= -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo" aria-label="Home">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-name">Stanley Predilla</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark / light mode" title="Toggle theme">
+          <span class="theme-icon-dark">🌙</span>
+          <span class="theme-icon-light">☀️</span>
+        </button>
+        <a href="resume.pdf" class="btn btn-primary nav-resume" download>Download Resume</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1 class="hero-heading">Hi, I'm Stanley.</h1>
+        <p class="hero-quote">"Programming isn't about what you know; it's about what you can figure out." — <span class="quote-author">Chris Pine, Learn to Program</span></p>
+        <p class="hero-description">A passionate developer exploring the intricacies of programming and its problem solving capabilities to further enhance my skills.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="#about" class="btn btn-secondary">Learn More</a>
+        </div>
+        <div class="status-indicator" role="status">
+          <span class="status-dot"></span>
+          <span class="status-text">Status: Online</span>
+        </div>
+      </div>
+      <div class="hero-illustration" aria-hidden="true">
+        <!-- Minimal laptop illustration -->
+        <svg viewBox="0 0 320 220" class="laptop-svg" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="70" y="40" width="180" height="120" rx="8"/>
+            <path d="M50 180 L70 160 L250 160 L270 180 Z"/>
+            <path d="M110 160 L110 180"/>
+            <path d="M210 160 L210 180"/>
+            <path d="M90 70 L110 90 L90 110"/>
+            <path d="M135 90 L155 90"/>
+            <path d="M175 70 L195 90 L175 110" />
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Decorative dice (thin outlines, no numbers) -->
+    <svg class="dice dice-d4 pos-hero-tl" viewBox="0 0 100 100" aria-hidden="true">
+      <polygon points="50,15 90,85 10,85"/>
+    </svg>
+    <svg class="dice dice-d6 pos-hero-br" viewBox="0 0 100 100" aria-hidden="true">
+      <rect x="20" y="25" width="60" height="60" rx="6"/>
+    </svg>
+    <svg class="dice dice-d8 pos-hero-tr" viewBox="0 0 100 100" aria-hidden="true">
+      <polygon points="50,5 95,50 50,95 5,50"/>
+    </svg>
+  </header>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <h2 class="section-heading">About Me</h2>
+      <div class="about-card">
+        <div class="about-content">
+          <h3 class="about-subheading">Who I Am</h3>
+          <p class="about-bio">I am a dedicated Computer Science student with a genuine interest in how software works beneath the surface. I enjoy taking problems apart, understanding the logic in how they work, and rebuilding solutions that are both functional and creative.</p>
+          <h3 class="about-subheading">Education</h3>
+          <p class="about-education">Currently pursuing a degree in Computer Science, with a focus on software & game development fundamentals, algorithms, and system design.</p>
+          <h3 class="about-subheading">Programming Interests</h3>
+          <p class="about-interests">I am particularly interested in backend development, machine learning, and cross-platform mobile applications. I enjoy working on projects that challenge me to learn new technologies quickly and apply them to real problems.</p>
+          <h3 class="about-subheading">Short Introduction</h3>
+          <p class="about-intro">When I'm not coding, I like to explore new concepts, Ideas and revisit old ones. From gaming, to movies, to books, I have a plethora of knowledge on anything I find interesting. I use this curiosity to fuel my drive to learn more, especially in programming.</p>
+        </div>
+      </div>
+    </div>
+    <svg class="dice dice-d10 pos-about-l" viewBox="0 0 100 100" aria-hidden="true">
+      <polygon points="50,5 80,35 50,95 20,35"/>
+    </svg>
+    <svg class="dice dice-d12 pos-about-r" viewBox="0 0 100 100" aria-hidden="true">
+      <polygon points="93.5,61.6 81.8,81.8 61.6,93.5 38.4,93.5 18.2,81.8 6.5,61.6 6.5,38.4 18.2,18.2 38.4,6.5 61.6,6.5 81.8,18.2 93.5,38.4"/>
+    </svg>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="skills" id="skills">
+    <div class="section-container">
+      <h2 class="section-heading">Technical Skills</h2>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <h2 class="section-heading">Featured Projects</h2>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+    <svg class="dice dice-d20 pos-projects-l" viewBox="0 0 100 100" aria-hidden="true">
+      <polygon points="50,5 90,30 90,70 50,95 10,70 10,30"/>
+      <polygon points="50,25 82,42.5 18,42.5"/>
+      <line x1="50" y1="5" x2="50" y2="25"/>
+      <line x1="90" y1="30" x2="82" y2="42.5"/>
+      <line x1="10" y1="30" x2="18" y2="42.5"/>
+    </svg>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <h2 class="section-heading">Contact</h2>
+      <p class="contact-intro">I'm always open to discussing new opportunities, internships, or collaborations. Feel free to reach out.</p>
+      <div class="contact-links">
+        <a href="stanpreds@gmail.com" class="contact-link">Email</a>
+        <a href="https://github.com/Staniscoding-ui" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
+        <a href="www.linkedin.com/in/stanley-predilla-818a32348" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+      </div>
+    </div>
+    <svg class="dice dice-d4 pos-contact-r" viewBox="0 0 100 100" aria-hidden="true">
+      <polygon points="50,15 90,85 10,85"/>
+    </svg>
+    <svg class="dice dice-d6 pos-contact-l" viewBox="0 0 100 100" aria-hidden="true">
+      <rect x="20" y="25" width="60" height="60" rx="6"/>
+    </svg>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>&copy; <span id="year">2025</span> Stanley Predilla. Built with vanilla HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <!-- ================= PROJECT MODAL ================= -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Close project details">&times;</button>
+      <h3 class="modal-title" id="modal-title"></h3>
+      <div class="modal-body" id="modal-body"></div>
+      <a class="btn btn-primary modal-github" id="modal-github" href="#" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

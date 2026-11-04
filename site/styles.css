@@ -890,6 +890,8 @@ section {
   color: var(--text);
   font-weight: 500;
   font-size: 0.93rem;
+  font-family: inherit;
+  cursor: pointer;
   transition: border-color var(--transition), transform var(--transition),
               color var(--transition);
 }

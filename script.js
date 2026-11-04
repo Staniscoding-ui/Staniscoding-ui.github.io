@@ -322,6 +322,30 @@ function initReveal() {
   items.forEach(el => observer.observe(el));
 }
 
+/* ---------- Copy email ---------- */
+function initContactLinks() {
+  const button = document.querySelector("[data-copy-email]");
+  if (!button) return;
+  button.addEventListener("click", async () => {
+    const email = button.dataset.copyEmail;
+    try {
+      await navigator.clipboard.writeText(email);
+    } catch {
+      const field = document.createElement("textarea");
+      field.value = email;
+      field.setAttribute("readonly", "");
+      field.style.position = "fixed";
+      field.style.opacity = "0";
+      document.body.appendChild(field);
+      field.select();
+      document.execCommand("copy");
+      field.remove();
+    }
+    button.textContent = "Copied!";
+    window.setTimeout(() => { button.textContent = "Email"; }, 1600);
+  });
+}
+
 /* ---------- Init ---------- */
 document.addEventListener("DOMContentLoaded", () => {
   renderSkills();
@@ -331,6 +355,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initModal();
   initScrollspy();
   initReveal();
+  initContactLinks();
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 });
